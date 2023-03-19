@@ -28,7 +28,7 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list grid">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">
+                        <a href="#home" class="nav-link active-link">
                             <i class="uil uil-estate nav-icon" ></i> Home
                         </a>
                     </li>
@@ -67,6 +67,9 @@
             </div>
 
             <div class="nav-btns">
+                <!-- Botão para mudar o tema -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav-toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -86,7 +89,7 @@
                         </a>
 
                         <a href="" class="home-social-icon" target="_blank">
-                            <i class="uil uil-dribbble"></i>
+                            <i class="uil uil-instagram"></i>
                         </a>
 
                         <a href="" class="home-social-icon" target="_blank">
@@ -582,10 +585,50 @@
 
     <!--====================== Rodapé ====================-->
     <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-cantainer container grid">
+                <div>
+                    <h1 class="foooter">Wanderson</h1>
+                    <span class="footer-subtitle">Desenvolvedor Front-end</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#services" class="footer-link">Serviços</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer-link">Portfólio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer-link">Contratar-me</a>
+                    </li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a href="" class="footer-social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+
+                    <a href="" class="footer-social" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="" class="footer-social" target="_blank">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer-copy">&#169; Wanderson Santos. All right reserved</p>
+        </div>
 
     </footer>
 
-    <!--====================== Rolagem para cima ====================-->
+    <!--== Rolagem para cima ==-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup-icon"></i>
+    </a>
 
     <!--====================== Deslizar com JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
