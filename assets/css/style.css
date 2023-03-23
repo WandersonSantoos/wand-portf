@@ -406,6 +406,13 @@ img {
     color: var(--first-color-alt);
 }
 
+#button-form {
+    text-decoration: none;
+    border: none;
+    font-family: var(--font-medium);
+    cursor: pointer;
+}
+
 /*========== Sobre ==========*/
 .about-img {
     display: flex;
@@ -459,7 +466,7 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
-    margin-left: 60px;
+    margin-left: 40px;
     cursor: pointer;
 }
 
@@ -860,6 +867,10 @@ img {
     padding: .75rem 1rem .25rem;
 }
 
+.contact-form {
+    margin: 15px;
+}
+
 .contact-label {
     font-size: var(--smaller-font-size);
     color: var(--title-color);
@@ -886,7 +897,7 @@ img {
 
 .footer-bg {
     background-color: var(--first-color-second);
-    padding: 2rem 0 3rem;
+    padding: 0;
 }
 
 .footer-title {
@@ -910,7 +921,7 @@ img {
 
 .footer-social {
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
+    margin-right: 50px;
 }
 
 .footer-social:hover {
@@ -922,6 +933,7 @@ img {
     text-align: center;
     color: var(--text-color-light);
     margin-top: var(--mb-3);
+    margin-bottom: var(--mb-1);
 }
 
 .footer-title,
@@ -1063,6 +1075,10 @@ img {
         width: 250px;
     }
 
+    .skills-group{
+        display: flex;
+    }
+
     .about-container,
     .skills-container,
     .portfolio-content,
@@ -1071,6 +1087,7 @@ img {
     .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 
     .qualification-sections {
         display: grid;
@@ -1243,7 +1260,12 @@ img {
     }
 
     .footer-bg {
-        padding: 3rem 0 3.5rem;
+        padding: 1rem 0 1rem;
+    }
+
+    .footer-link {
+        display: flex;
+        justify-content: right;
     }
 
     .footer-links {
@@ -1308,9 +1330,4 @@ img {
         width: 460px;
     }
 
-    /* Falta corrigir 
-    .contact-inputs {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    */
 }

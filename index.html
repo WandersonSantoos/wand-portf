@@ -424,11 +424,11 @@
                     </div>
                 </div>
 
-                <!--== Serviço 2 ==-->
+                <!--== Serviço 2 ==--> 
                 <div class="services-content">
                     <div>
-                        <i class="uil uil-web-grid services-container"></i>
-                        <h3 class="services-title">Ui/Ux <br> Designer</h3>
+                        <i class="uil uil-chart-growth services-container"></i>
+                        <h3 class="services-title">Administrative  <br> Assistant</h3>
                     </div>
 
                     <span class="button button-flex button-small button-link services-button">
@@ -438,18 +438,19 @@
 
                     <div class="services-modal">
                         <div class="services-modal-content">
-                            <h4 class="services-modal-title"> Ui/UX <br> Designer</h4>
+                            <h4 class="services-modal-title"> Administrative  <br> Assistant</h4>
                             <i class="uil uil-times services-modal-close"></i>
 
                             <ul class="services-modal-services grid">
                                 <li class="services-modal-service">
                                     <i class="uil uil-check-circle services-modal-icon"></i>
-                                    <p>Desenvolvimento de interfaces para usuários</p>
+                                    <p>Elaboração de planilhas e formulários</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </div>                
+                </div>
+                                
             </div>
         </section>
 
@@ -472,21 +473,6 @@
 
                     <!--= Portfólio projeto 2 =-->
                     <div class="portfolio-content grid swiper-slide">
-                        <img src="assets/img/tela-login-lol.png" alt="" class="portfolio-img">
-
-                        <div class="portfolio-data">
-                            <h3 class="portfolio-title">Login LOL</h3>
-                            <p class="portfolio-description">Clone da tela de Login do jogo League Of Legends, feito com apenas HTML, CSS e JavaScript.</p>
-                            <a href="https://github.com/WandersonSantoos/proj-login-LOL" class="button button-flex button-small portfolio-button" target="_blank">
-                                Visualizar Código.
-                                <i class="uil uil-arrow-right button-icon"></i>
-                            </a>
-                        </div>
-                    </div> 
-                    
-
-                    <!--= Portfólio projeto 3 =-->
-                    <div class="portfolio-content grid swiper-slide">
                         <img src="assets/img/calculadora.png" alt="" class="portfolio-img">
 
                         <div class="portfolio-data">
@@ -494,6 +480,21 @@
                             <p class="portfolio-description">Uma simples calculadora com apenas HTML, CSS e JavaScript.</p>
                             <a href="https://github.com/WandersonSantoos/proj-calculadora" class="button button-flex button-small portfolio-button" target="_blank">
                                 Visualizar Código
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div> 
+
+
+                    <!--= Portfólio projeto 3 =-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/tela-login-lol.png" alt="" class="portfolio-img">
+
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Login LOL</h3>
+                            <p class="portfolio-description">Clone da tela de Login do jogo League Of Legends, feito com apenas HTML, CSS e JavaScript.</p>
+                            <a href="https://github.com/WandersonSantoos/proj-login-LOL" class="button button-flex button-small portfolio-button" target="_blank">
+                                Visualizar Código.
                                 <i class="uil uil-arrow-right button-icon"></i>
                             </a>
                         </div>
@@ -610,33 +611,31 @@
                         </div>
                     </div>
                 </div>  
-                    <form action="" class="contact-form grid">
+                    <form action="https://formsubmit.co/ajax/wandersonsantos.ws51@gmail.com" method="POST" data-form class="contact-form grid">
                         <div class="contact-inputs grid">
                             <div class="contact-content">
-                                <label for=""  class="contact-label">Nome: </label>
-                                <input type="text" class="contact-input">
-                            
-                            </div>
-                            <div class="contact-content">
-                                <label for="" class="contact-label">E-mail: </label>
-                                <input type="email" class="contact-input">
+                                <label for="Nome"  class="contact-label">Nome: </label>
+                                <input type="text" name="Nome" id="Nome" class="contact-input" required/>
                             </div>
 
                             <div class="contact-content">
-                                <label for="" class="contact-label">Projeto:</label>
-                                <input type="text" class="contact-input">
+                                <label for="E-mail" class="contact-label">E-mail: </label>
+                                <input type="email" name="E-mail" id="E-mail" class="contact-input" required/>
                             </div>
 
                             <div class="contact-content">
-                                <label for="" class="contact-label">Descrição: </label>
-                                <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+                                <label for="Projeto" class="contact-label">Projeto:</label>
+                                <input type="text" name="Projeto" id="Projeto" class="contact-input" required/>
+                            </div>
+
+                            <div class="contact-content">
+                                <label for="Textarea" class="contact-label">Descrição: </label>
+                                <textarea name="Textarea" id="Textarea" cols="0" rows="2" class="contact-input"></textarea>
                             </div>
 
                             <div>
-                                <a href="#" class="button button-flex">
-                                Enviar Mensagem
-                                <i class="uil uil-message button-icon"></i>
-                                </a>
+                                <button class="button button-flex" id="button-form"  type="submit" data-button>Enviar Mensagem<i class="uil uil-message button-icon"></i>
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -654,6 +653,7 @@
                     <span class="footer-subtitle">Desenvolvedor Front-end</span>
                 </div>
 
+                <div class="footer-link">
                 <ul class="footer-links">
                     <li>
                         <a href="#services" class="footer-link">Serviços</a>
@@ -664,9 +664,11 @@
                     </li>
 
                     <li>
-                        <a href="#contact" class="footer-link">Contratar-me</a>
+                        <a href="#contact" class="footer-link">Contratar</a>
                     </li>
                 </ul>
+                </div>
+ 
 
                 <div class="footer-socials">
                     <a href="https://www.instagram.com/wanderson.jpeg/" class="footer-social" target="_blank">
@@ -688,7 +690,7 @@
     </footer>
 
     <!--== Rolagem para cima ==-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="#home" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup-icon"></i>
     </a>
 
