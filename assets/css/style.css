@@ -99,6 +99,7 @@ body.dark-theme {
     color: var(--first-color);
 }
 
+
 /*========== Geral ==========*/
 * {
     box-sizing: border-box;
@@ -278,7 +279,7 @@ img {
 
 .home-content {
     grid-template-columns: .5fr 3fr;
-    padding-top: 3.5rem;
+    padding-top: 1rem;
     align-items: center;
 }
 
@@ -447,14 +448,18 @@ img {
 }
 
 /*========== Habilidades ==========*/
+
+
 .skills-container {
     row-gap: 0;
+    margin: 50px;
 }
 
 .skills-header {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
+    margin-left: 60px;
     cursor: pointer;
 }
 
@@ -525,11 +530,15 @@ img {
     width: 30%;
 }
 
+.skills-python {
+    width: 15%;
+}
+
 .skills-excel {
     width: 90%;
 }
 
-.skills-administracao{
+.skills-word{
     width: 50%;
 }
 
@@ -545,10 +554,12 @@ img {
 .skills-open .skills-list {
     height: max-content;
     margin-bottom: var(--mb-2-5);
+    transition: ease .5s;
 }
 
 .skills-open .skills-arrow {
     transform: rotate(-180deg);
+    transition: ease .5s;
 }
 
 /*========== Qualificações ==========*/
@@ -1162,6 +1173,10 @@ img {
         justify-content: space-between;
     }
 
+    .skills-group{
+        display: flex;
+    }
+
     .about-buttons {
         justify-content: initial;
     }
@@ -1267,6 +1282,10 @@ img {
 
     .portfolio-content {
         column-gap: 5rem;
+    }
+
+    .skills-group{
+        display: flex;
     }
 
     .swiper-portfolio-icon {
