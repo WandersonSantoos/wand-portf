@@ -240,6 +240,11 @@ img {
     color: var(--first-color);
 }
 
+.link-dio {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
 .nav-icon {
     font-size: 1.2rem;
 }
@@ -459,14 +464,17 @@ img {
 
 .skills-container {
     row-gap: 0;
-    margin: 50px;
+    display: block;
+}
+
+.skills-content {
+    margin: auto;
 }
 
 .skills-header {
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
-    margin-left: 40px;
     cursor: pointer;
 }
 
@@ -496,7 +504,7 @@ img {
 
 .skills-list {
     row-gap: 1.5rem;
-    padding-left: 2.7rem;
+    padding-left: 0;
 }
 
 .skills-titles {
