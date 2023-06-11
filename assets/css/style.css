@@ -79,13 +79,14 @@ body.dark-theme {
     --body-color: hsl(var(--hue-color), 28%, 12%);
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);   
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    transition: all 1s;   
 }
 
 /*========== Botão modo escuro e claro ==========*/
 .nav-btns {
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .change-theme {
@@ -93,10 +94,12 @@ body.dark-theme {
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
+    transition: all 3s;
 }
 
 .change-theme:hover {
     color: var(--first-color);
+    transition: all 1s; 
 }
 
 
@@ -118,6 +121,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: all 1s; 
 }
 
 h1, h2, h3, h4 {
