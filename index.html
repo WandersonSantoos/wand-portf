@@ -15,6 +15,13 @@
 
     <!--================ Favicon ==============-->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!--================ 3d modal ==============-->
+    <!-- CDN do Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+
+    <script src="assets/js/GLTFLoader.js"></script>
+
+
 
     <title>Wanderson Santos</title>
 </head>
@@ -128,6 +135,7 @@
 
             <div class="about-container container grid">
                 <img src="assets/img/logo-wanderson.jpg" alt="" class="about-img">
+
                 <div class="about-data">
                     <p class="about-description">Web Developer</p>
 
@@ -630,7 +638,7 @@
             <div class="contact-container cotainer grid">
                 <div class="contato-secao">
                     <div class="contact-information">
-                        <i class="uil uil-phone contact-icon"></i>
+                        <i class="uil uil-whatsapp contact-icon"></i>
 
                         <div>
                             <h3 class="contact-title">Fale Comigo:</h3>
@@ -657,6 +665,10 @@
                     </div>
                 </div>  
                     <form action="https://formsubmit.co/ajax/wandersonsantos.ws51@gmail.com" method="POST" data-form class="contact-form grid">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="Novo Projeto!">
+                        <input type="hidden" name="_autoresponse" value="Gratidão pelo cadastro, logo entraremos em contato para maiores detalhes!">
+
                         <div class="contact-inputs grid">
                             <div class="contact-content">
                                 <label for="Nome"  class="contact-label">Nome: </label>
@@ -674,8 +686,8 @@
                             </div>
 
                             <div class="contact-content">
-                                <label for="Textarea" class="contact-label">Descrição: </label>
-                                <textarea name="Textarea" id="Textarea" cols="0" rows="2" class="contact-input"></textarea>
+                                <label for="Descrição" class="contact-label">Descrição: </label>
+                                <textarea name="Descrição" id="Descrição" cols="0" rows="2" class="contact-input"></textarea>
                             </div>
 
                             <div>

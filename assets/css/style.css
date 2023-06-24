@@ -138,7 +138,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 
@@ -1162,7 +1162,7 @@ img {
     }
 
     .home-container {
-        row-gap: 5rem;
+        row-gap: 3rem;
     }
 
     .home-content {
@@ -1187,7 +1187,7 @@ img {
     }
 
     .about-img {
-        width: 250px;
+        width: 100%;
     }
 
     .img-home {
@@ -1265,6 +1265,7 @@ img {
 
     .project-data {
         padding-top: .8rem;
+        padding-bottom: 2rem;
     }
 
     .footer-container {
