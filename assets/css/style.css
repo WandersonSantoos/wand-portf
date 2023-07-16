@@ -1121,6 +1121,14 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    iframe {
+        width: 300px;
+        height: 140px;
+    }
+
+    .ytp-title-text {
+        font-size: 15px;
+    }
 
     .qualification-sections {
         display: grid;
@@ -1325,6 +1333,11 @@ img {
 
     .portfolio-content {
         column-gap: 5rem;
+    }
+
+    iframe {
+        width: 400px;
+        height: 220px;
     }
 
     .skills-group{
