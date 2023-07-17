@@ -538,31 +538,19 @@ img {
 }
 
 .skills-html {
-    width: 90%;
+    width: 100%;
 }
 
 .skills-css {
-    width: 70%;
+    width: 85%;
 }
 
 .skills-javascript {
-    width: 30%;
+    width: 45%;
 }
 
 .skills-python {
-    width: 15%;
-}
-
-.skills-excel {
-    width: 90%;
-}
-
-.skills-word{
-    width: 50%;
-}
-
-.skills-powerbi {
-    width: 45%;
+    width: 30%;
 }
 
 .skills-close .skills-list {
@@ -1124,6 +1112,7 @@ img {
     iframe {
         width: 300px;
         height: 140px;
+        border-radius: 12px;
     }
 
     .ytp-title-text {
