@@ -244,7 +244,7 @@ img {
     color: var(--first-color);
 }
 
-.link-dio {
+.link-dio, .link-google {
     text-decoration: none;
     color: var(--first-color);
 }
